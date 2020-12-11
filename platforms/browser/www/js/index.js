@@ -11,7 +11,6 @@ function showCurrentPosition() {
     $("#geoloc").click(function() {
         $ajax({
             type: "POST",
-            data: "",
             url: "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB9BCaN1O6xS-E3PFoK_sAwHR5kSKI8TuI",
 
         });
