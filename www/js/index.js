@@ -8,13 +8,6 @@ function showCurrentPosition() {
         navigator.geolocation.getCurrentPosition(geolocationSuccess, handleNoGeolocation, {timeout: 3000, enableHighAccuracy: true, maximumAge: 75000});
     }
 
-    $("#geoloc").click(function() {
-        $ajax({
-            type: "POST",
-            url: "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB9BCaN1O6xS-E3PFoK_sAwHR5kSKI8TuI",
-
-        });
-    });
 }
 
 function geolocationSuccess(p) {
