@@ -1,7 +1,6 @@
 var  map;
 
 function showCurrentPosition() {
-    console.log("Called showCurrentPosition()");
 
     // prueba la geolocalización html5
     if (navigator.geolocation) {
